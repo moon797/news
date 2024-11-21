@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Смартфон Apple iPhone 14</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+        }
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+        .thumbnail:hover, .thumbnail.active {
+            opacity: 1;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+
+        .product-description {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .specifications {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .add-to-cart {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-info">
+        <h1 class="product-title">{{ new.head }}</h1>
+
+        <div class="product-description">
+            {{ new.text }}
+        </div>
+
+        <button class="add-to-cart">Добавить в корзину</button>
+        <a href="/">Вернуться на главный экран</a>
+    </div>
+</body>
+</html>
