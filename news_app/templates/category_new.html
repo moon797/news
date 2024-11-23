@@ -46,10 +46,15 @@
             {% for new in news %}
             <div class="product-name">{{ new.head }}</div>
             <div class="product-descr">{{ new.text }}</div>
-            <button class="btn btn-primary btn-sm">add to basket</button>
+            <a href="/new/{{ new.id }}" class="icon-link">
+                 <button class="btn btn-primary btn-sm">add to basket</button>
+                Подробнее
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
             {% endfor %}
         </div>
-
     </div>
 </body>
 </html>

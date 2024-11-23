@@ -27,7 +27,8 @@
         {% for p in news %}
       <div class="feature col">
         <h3 class="fs-2 text-body-emphasis text-white">{{ p.head }}</h3>
-        <a href="/new/{{ new.id }}" class="icon-link">
+
+        <a href="/new/{{ p.id }}" class="icon-link">
           Подробнее
           <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
         </a >
